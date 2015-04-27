@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/layout_margin_default"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.escmobile.bjss.widget.Stepper
+                android:id="@+id/stepper_beans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_default"></com.escmobile.bjss.widget.Stepper>
+
+            <com.escmobile.bjss.widget.Stepper
+                android:id="@+id/stepper_peas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_default"></com.escmobile.bjss.widget.Stepper>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.escmobile.bjss.widget.Stepper
+                android:id="@+id/stepper_milk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_default"></com.escmobile.bjss.widget.Stepper>
+
+            <com.escmobile.bjss.widget.Stepper
+                android:id="@+id/stepper_eggs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_default"></com.escmobile.bjss.widget.Stepper>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/currencies_spinner"
+
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/layout_margin_default"
+            android:layout_height="@dimen/spinner_height" />
+
+        <Button
+            android:id="@+id/button_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_default"
+            android:text="@string/checkout" />
+
+
+        <TextView
+            android:id="@+id/display"
+            android:background="#E5FFCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_default"
+            android:padding="@dimen/layout_margin_default"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCCCCCCC"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_default"
+            android:gravity="center"
+            android:text="@string/getting_currency_list" />
+
+    </LinearLayout>
+
+</FrameLayout>

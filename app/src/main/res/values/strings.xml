@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Basket Pricing</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="stepper_decrease">-</string>
+    <string name="stepper_default_value">0</string>
+    <string name="stepper_increase">+</string>
+    <string name="checkout">Checkout</string>
+    <string name="milk">Milk</string>
+    <string name="beans">Beans</string>
+    <string name="peas">Peas</string>
+    <string name="eggs">Eggs</string>
+    <string name="getting_currency_list">Getting currency list</string>
+
+
+    <string name="message_api_call_failed">Sorry, API call failed</string>
+    <string name="message_no_currency_list_found">Sorry, no currency list found</string>
+    <string name="message_cannot_parse_rate">Sorry, cannot parse rate value</string>
+    <string name="total_in_base_currency">"Total in base currency: "</string>
+</resources>
